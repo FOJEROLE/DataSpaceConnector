@@ -109,6 +109,8 @@ include(":extensions:common:iam:decentralized-identity:identity-did-web")
 include(":extensions:common:iam:iam-mock")
 include(":extensions:common:iam:oauth2:oauth2-daps")
 include(":extensions:common:iam:oauth2:oauth2-core")
+include(":extensions:common:iam:oauth2:oauth2-client")
+include(":extensions:common:iam:oauth2:oauth2-service")
 include(":extensions:common:metrics:micrometer-core")
 include(":extensions:common:monitor:monitor-jdk-logger")
 include(":extensions:common:sql:sql-core")
@@ -138,7 +140,8 @@ include(":extensions:control-plane:provision:provision-blob")
 include(":extensions:control-plane:provision:provision-gcs")
 include(":extensions:control-plane:provision:provision-http")
 include(":extensions:control-plane:provision:provision-aws-s3")
-include(":extensions:control-plane:provision:provision-oauth2")
+include(":extensions:control-plane:provision:provision-oauth2:provision-oauth2-core")
+include(":extensions:control-plane:provision:provision-oauth2:provision-oauth2")
 include(":extensions:control-plane:store:cosmos:asset-index-cosmos")
 include(":extensions:control-plane:store:cosmos:contract-definition-store-cosmos")
 include(":extensions:control-plane:store:cosmos:contract-negotiation-store-cosmos")
@@ -174,38 +177,6 @@ include(":extensions:data-plane-selector:store:cosmos:data-plane-instance-store-
 include(":launchers:data-plane-server")
 include(":launchers:dpf-selector")
 include(":launchers:ids-connector")
-
-// numbered samples for the onboarding experience --------------------------------------------------
-include(":samples:01-basic-connector")
-include(":samples:02-health-endpoint")
-include(":samples:03-configuration")
-
-include(":samples:04.0-file-transfer:consumer")
-include(":samples:04.0-file-transfer:provider")
-include(":samples:04.0-file-transfer:integration-tests")
-include(":samples:04.0-file-transfer:transfer-file")
-include(":samples:04.0-file-transfer:status-checker")
-
-
-include(":samples:04.1-file-transfer-listener:consumer")
-include(":samples:04.1-file-transfer-listener:file-transfer-listener-integration-tests")
-include(":samples:04.1-file-transfer-listener:listener")
-
-include(":samples:04.2-modify-transferprocess:api")
-include(":samples:04.2-modify-transferprocess:consumer")
-include(":samples:04.2-modify-transferprocess:modify-transferprocess-sample-integration-tests")
-include(":samples:04.2-modify-transferprocess:simulator")
-include(":samples:04.2-modify-transferprocess:watchdog")
-
-include(":samples:04.3-open-telemetry:consumer")
-include(":samples:04.3-open-telemetry:provider")
-
-include(":samples:05-file-transfer-cloud:consumer")
-include(":samples:05-file-transfer-cloud:provider")
-include(":samples:05-file-transfer-cloud:transfer-file")
-
-// modules for code samples ------------------------------------------------------------------------
-include(":samples:other:custom-runtime")
 
 // extension points for a connector ----------------------------------------------------------------
 include(":spi:common:auth-spi")
