@@ -1,0 +1,18 @@
+{
+  "asset": {
+    "id": "sensible-daten",
+    "properties": {
+      "asset:prop:id": "sensible-daten"
+   }
+  },
+  "dataAddress": {
+    "additional": {
+      "username": "key",
+       "password": "password"
+    },
+    "properties": {
+      "baseUrl": "http://143.93.245.161/ids-connector/sensible-daten.txt",
+      "type": "HttpData"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "edctype": "dataspaceconnector:datarequest",
+    "protocol": "ids-multipart",
+    "assetId": "sensible-daten",
+    "contractId": "3:dbf074e9-1e87-4961-8bf7-7f75e337fd71",
+    "dataDestination": {
+        "properties": {
+            "type": "HttpData",
+            "baseUrl": "http://143.93.245.182/data.php"
+        }
+    },
+    "transferType": {
+        "contentType": "text/plain",
+        "isFinite": true
+    },
+    "managedResources": true,
+    "connectorAddress": "http://143.93.245.161:8282/api/v1/ids/data",
+    "connectorId": "consumer"
+}

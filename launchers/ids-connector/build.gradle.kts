@@ -19,18 +19,30 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
+
 dependencies {
     implementation(project(":core:control-plane:control-plane-core"))
-
+ 
     implementation(project(":data-protocols:ids"))
 
     implementation(project(":extensions:common:configuration:configuration-filesystem"))
     implementation(project(":extensions:common:vault:vault-filesystem"))
+ 
 
     implementation(project(":extensions:common:iam:oauth2:oauth2-service"))
     implementation(project(":extensions:common:iam:oauth2:oauth2-daps"))
 
     implementation(project(":extensions:control-plane:api:management-api"))
+
+     /*Meine extensions*/
+    implementation(project(":extensions:common:auth:auth-tokenbased"))
+    implementation(project(":extensions:control-plane:transfer:transfer-data-plane"))    
+    implementation(project(":extensions:common:api:api-observability"))
+    implementation(project(":extensions:data-plane:data-plane-http"))
+    implementation(project(":extensions:data-plane-selector:data-plane-selector-client"))
+    implementation(project(":core:data-plane-selector:data-plane-selector-core"))
+    implementation(project(":core:data-plane:data-plane-core"))
+    /*Ende meine Extensions*/
 
     testImplementation(libs.junit.jupiter.api)
     testRuntimeOnly(libs.junit.jupiter.engine)

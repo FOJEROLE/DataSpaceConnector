@@ -1,0 +1,18 @@
+{
+  "asset": {
+    "id": "vpn-config",
+    "properties": {
+      "asset:prop:id": "vpn-config"
+   }
+  },
+  "dataAddress": {
+    "additional": {
+      "username": "key",
+       "password": "password"
+    },
+    "properties": {
+      "baseUrl": "http://143.93.245.161/ids-connector/asset-vpn-config.txt",
+      "type": "HttpData"
+    }
+  }
+}
